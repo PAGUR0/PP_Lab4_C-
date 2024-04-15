@@ -31,7 +31,7 @@ namespace library
         {
             Console.WriteLine($"{Surname}, {Name}, {Patronymic} взял {books} книги");
         }
-        public void takeBook(string[] books)
+        public void takeBook(params string[] books)
         {
             Console.WriteLine($"{Surname}, {Name}, {Patronymic} взял книги: {string.Join(", ", books)}");
         }
@@ -40,7 +40,7 @@ namespace library
         {
             Console.WriteLine($"{Surname}, {Name}, {Patronymic} вернул {books} книги");
         }
-        public void returnBook(string[] books)
+        public void returnBook(params string[] books)
         {
             Console.WriteLine($"{Surname}, {Name}, {Patronymic} вернул книги: {string.Join(", ", books)}");
         }
